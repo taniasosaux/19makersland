@@ -22,17 +22,29 @@
         <li>
           <a href="index.html">Unidos Vs Covid</a>
         </li>
-        <li>
+        <!--<li>
           <a href="registro.html">Registro</a>
         </li>
         <li>
           <a href="camp.html">Campañas</a>
-        </li>
+        </li>-->
         <li>
           <a href="descarga.html">Descargables</a>
         </li>
         <li>
-          <a class="btn-floating btn-small waves-effect waves-light black"><i class="material-icons">person</i></a>
+          <a class="btn modal-trigger btn-floating btn-small waves-effect waves-light black"><i
+              class="material-icons">person</i></a>
+          <!-- Modal Structure -->
+          <div id="modal1" class="modal">
+            <div class="modal-content">
+              <h4>Modal Header</h4>
+              <p>A bunch of text</p>
+            </div>
+            <div class="modal-footer">
+              <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+            </div>
+          </div>
+
         </li>
       </ul>
     </nav>
@@ -168,18 +180,18 @@
   <footer class="footer z-depth-5">
     <div class="container">
       <div class="social">
-        <a href="https://www.facebook.com/PlataformaMexicoCovid" class="social-link facebook"></a>
-        <a href="https://twitter.com/MexicoCovid191" class="social-link twitter"></a>
-        <a href="https://www.instagram.com/p/B-V0_fPHHul" class="social-link Instagram"></a>
-        <a href="https://www.linkedin.com/company/plataformamexicocovid19/" class="social-link linkedIn"></a>
+        <a href="#" class="social-link facebook"></a>
+        <a href="https://twitter.com/19makersorg" class="social-link twitter"></a>
+        <!--<a href="https://www.instagram.com/p/B-V0_fPHHul" class="social-link Instagram"></a>
+        <a href="https://www.linkedin.com/company/plataformamexicocovid19/" class="social-link linkedIn"></a>-->
       </div>
-      <div>
-        <p>
-          19MAKERS<Br />
-          <a href="tyc.html">Términos y Condiciones</a>
-          <a href="adp.html">Aviso de privacidad</a>
-        </p>
-      </div>
+
+      <p>
+        19MAKERS<Br />
+        <a href="tyc.html">Términos y Condiciones /</a>
+        <a href="adp.html">Aviso de privacidad</a>
+      </p>
+
     </div>
   </footer>
   <script>
@@ -205,8 +217,19 @@
       }
     }
   </script>
-  <script data-account="5C16rj2qY2" src="https://cdn.userway.org/widget.js"></script>
+  <script data-account="3tE0i3UiGQ" src="https://cdn.userway.org/widget.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var elems = document.querySelectorAll('.modal');
+      var instances = M.Modal.init(elems);
+    });
+  </script>
 </body>
 
 </html>
+
+
+
+<!--<br />Diseñado con 💖 por
+            <a href="https://taniasosa.com">Tania Sosa</a>-->

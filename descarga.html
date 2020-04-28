@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>19MAKERS</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="#" class="brand-logo valign-wrapper">
+                <img class="responsive-img left" src="assets/img/Logo19makers.png" alt="Logo 19MAKERS">
+            </a>
+            <ul class="right valign-wapper">
+                <li>
+                    <a href="index.html">Unidos Vs Covid</a>
+                </li>
+                <!--<li>
+          <a href="registro.html">Registro</a>
+        </li>
+        <li>
+          <a href="camp.html">Campañas</a>
+        </li>-->
+                <li>
+                    <a href="descarga.html">Descargables</a>
+                </li>
+                <li>
+                    <a class="btn modal-trigger btn-floating btn-small waves-effect waves-light black"><i
+                            class="material-icons">person</i></a>
+                    <!-- Modal Structure -->
+                    <div id="modal1" class="modal">
+                        <div class="modal-content">
+                            <h4>Modal Header</h4>
+                            <p>A bunch of text</p>
+                        </div>
+                        <div class="modal-footer">
+                            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+                        </div>
+                    </div>
+
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <img src="assets/img/component.png" alt="">
+
+
+    <footer class="footer z-depth-5">
+        <div class="container">
+            <div class="social">
+                <a href="#" class="social-link facebook"></a>
+                <a href="https://twitter.com/19makersorg" class="social-link twitter"></a>
+                <!--<a href="https://www.instagram.com/p/B-V0_fPHHul" class="social-link Instagram"></a>
+            <a href="https://www.linkedin.com/company/plataformamexicocovid19/" class="social-link linkedIn"></a>-->
+            </div>
+
+            <p>
+                19MAKERS<Br />
+                <a href="tyc.html">Términos y Condiciones /</a>
+                <a href="adp.html">Aviso de privacidad</a>
+            </p>
+
+        </div>
+    </footer>
+    <script>
+        const ipad = window.matchMedia("screen and (max-width: 767px)");
+        const menu = document.querySelector(".menu");
+        const burgerButton = document.querySelector("#burger-menu");
+        ipad.addListener(validation);
+
+        function validation(event) {
+            if (event.matches) {
+                burgerButton.addEventListener("click", hideShow);
+            } else {
+                burgerButton.removeEventListener("click", hideShow);
+            }
+        }
+        validation(ipad);
+
+        function hideShow() {
+            if (menu.classList.contains("is-active")) {
+                menu.classList.remove("is-active");
+            } else {
+                menu.classList.add("is-active");
+            }
+        }
+    </script>
+    <script data-account="3tE0i3UiGQ" src="https://cdn.userway.org/widget.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('.modal');
+            var instances = M.Modal.init(elems);
+        });
+    </script>
+</body>
+
+</html>
+
+
+
+<!--<br />Diseñado con 💖 por
+                <a href="https://taniasosa.com">Tania Sosa</a>-->
