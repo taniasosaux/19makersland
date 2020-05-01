@@ -1,5 +1,5 @@
 body {
-    font-family: montserrat;
+    font-family: Neue Machina;
     margin: 0px;
 }
 
@@ -43,7 +43,7 @@ ul {
 }
 
 figure {
-    margin: 0;
+    margin: 0px;
 }
 
 figure.logo {
@@ -83,7 +83,7 @@ figure.logo {
 
 
 
-.waves-effect.waves-light.btn-large.red {
+.waves-effect.waves-light.btn.teal {
     border-radius: 2em;
 }
 
@@ -124,15 +124,22 @@ h2 {
 
 .project-imageContainer img {
     max-width: 100%;
+
 }
 
 .project-imageContainerHero img {
     max-width: 400%;
+
 }
 
 
+
+.project-hero.project {
+    margin-bottom: 1px;
+}
+
 .event-imageContainer {
-    max-width: 300px;
+    max-width: 280px;
     flex: 1;
     margin: 0 auto;
     display: inherit;
