@@ -38,6 +38,10 @@ nav .brand-logo {
 
 }
 
+.parallax-container {
+    height: 150px;
+}
+
 nav .brand-logo img {
     width: 70px;
 }
