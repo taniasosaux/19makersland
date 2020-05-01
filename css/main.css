@@ -43,6 +43,10 @@ nav .brand-logo img {
     width: 700px;
 }
 
+.waves-effect.waves-light.btn-large.red {
+    border-radius: 2em;
+}
+
 header nav ul {
     height: 100px;
 }
