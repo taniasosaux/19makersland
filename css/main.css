@@ -25,6 +25,11 @@ p {
     border-radius: 1em;
 }
 
+.container-opensource {
+    margin-top: 1em;
+    align-items: center;
+}
+
 .header {
     background-color: white;
     color: black;
