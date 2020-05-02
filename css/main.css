@@ -54,8 +54,10 @@ figure {
 }
 
 figure.logo {
-    display: grid;
-    justify-items: center;
+    justify-content: center;
+    padding-top: .3em;
+    padding-left: 2.5em;
+
 }
 
 .header ol {
@@ -202,6 +204,7 @@ h2 {
     align-items: inherit;
     height: inherit;
     flex-wrap: inherit;
+    background-color: white;
 }
 
 .container-project {
@@ -215,7 +218,14 @@ h2 {
     flex-wrap: inherit;
 }
 
-
+.container-btn {
+    padding: 1rem;
+    display: flex;
+    height: inherit;
+    margin: 0;
+    padding: 100;
+    list-style: none;
+}
 
 .footer {
     color: black;
@@ -278,6 +288,10 @@ h2 {
     }
 
     .header a {
+        justify-content: center;
+    }
+
+    .container-btn {
         justify-content: center;
     }
 }
