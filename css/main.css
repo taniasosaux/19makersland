@@ -94,6 +94,7 @@ figure.logo {
 .waves-effect.waves-light.btn.teal {
     border-radius: 2em;
     color: white;
+    float: center;
 }
 
 
@@ -225,6 +226,7 @@ h2 {
     margin: 0;
     padding: 100;
     list-style: none;
+    float: center;
 }
 
 .footer {
@@ -291,10 +293,20 @@ h2 {
         justify-content: center;
     }
 
-    .container-btn {
+    figure.logo {
         justify-content: center;
+        padding-top: .3em;
+        padding-left: 2.5em;
+
     }
+
+    figure {
+        margin: 0px;
+    }
+
+
 }
+
 
 @media screen and (max-width: 480px) {
     h1 {
@@ -314,6 +326,8 @@ h2 {
         text-align: center;
         border: 1px solid transparent;
     }
+
+
 }
 
 @media screen and (max-width: 320px) {

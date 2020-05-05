@@ -24,52 +24,86 @@
 </head>
 
 <body>
-  <header class="header z-depth-2">
-    <div class="container">
-      <figure class="logo">
-        <a title="Logo19M" href="index.html">
-          <img src="assets/img/logown.png" width="45" height="45" alt="Logo 19Makers" /></a>
-      </figure>
-
-      <ol>
+  <nav class="nav-wrapper white z-depth-2">
+    <div class="container-nav ">
+      <a title="Logo19M" href="index.html">
+        <img src="assets/img/logown.png" width="45" height="45" alt="Logo 19Makers" /></a>
+      <a href="#" data-target="menu-responsive" class=" right sidenav-trigger">
+        <i class="material-icons black-text">menu</i>
+      </a>
+      <ul class="right hide-on-med-and-down">
         <li>
-          <a class="modal-trigger" href="#modal1">¿Quiénes Somos?</a>
+          <a class="modal-trigger black-text" href="#modal1">¿Quiénes Somos?</a>
         </li>
-
-
         <!-- Modal Structure -->
         <div id="modal1" class="modal">
           <div class="modal-content">
             <!--<h4>Modal Header</h4>
-            <p>A bunch of text</p>-->
+                  <p>A bunch of text</p>-->
             <video class="responsive-video" controls>
               <source src="assets/img/19video.mp4" type="video/mp4">
             </video>
             <div class="modal-footer">
-              <a class="modal-close waves-effect waves-light btn teal center" href="#project">¡ REGISTRATE !</a>
-
+              <a class="modal-close waves-effect waves-light btn teal center" href="index.html">¡
+                REGISTRATE !</a>
             </div>
           </div>
         </div>
-
-        <a href="#project">Registro</a>
-
-        <!--<li>
-                <a href="camp.html">Campañas</a>
-            </li>-->
         <li>
-          <a href="descarga.html">Descargables</a>
+          <a class="black-text" href="index.html">Registro</a>
         </li>
+        <!--<li>
+                    <a href="camp.html">Campañas</a>
+                </li>-->
+        <li>
+          <a class="black-text" href="descarga.html">Descargables</a>
+        </li>
+
         <div class="container-btn">
 
           <div class="btn modal-trigger btn-floating btn-big waves-effect waves-light black" href="#"><i
               class="material-icons">person</i>
           </div>
-
         </div>
-      </ol>
+      </ul>
     </div>
-  </header>
+  </nav>
+  <ul class="right sidenav" id="menu-responsive">
+    <a title="Logo19M" href="index.html">
+      <img class="right" src="assets/img/logown.png" width="45" height="45" alt="Logo 19Makers" /></a>
+    <li>
+      <a class="modal-trigger" href="#modal2">¿Quiénes Somos?</a>
+    </li>
+    <!-- Modal Structure -->
+    <div id="modal2" class="modal">
+      <div class="modal-content">
+        <!--<h4>Modal Header</h4>
+          <p>A bunch of text</p>-->
+        <video class="responsive-video" controls>
+          <source src="assets/img/19video.mp4" type="video/mp4">
+        </video>
+        <div class="modal-footer">
+          <a class="modal-close waves-effect waves-light btn teal center" href="index.html">¡ REGISTRATE
+            !</a>
+        </div>
+      </div>
+    </div>
+    <li>
+      <a class="waves-effect" href="index.html">Registro</a>
+    </li>
+    <!--<li>
+            <a href="camp.html">Campañas</a>
+        </li>-->
+    <li>
+      <a class="waves-effect" href="descarga.html">Descargables</a>
+    </li>
+    </div>
+    <div class="right">
+      <div class="btn modal-trigger btn-floating btn-big waves-effect waves-light black" href="#"><i
+          class="material-icons">person</i>
+      </div>
+    </div>
+  </ul>
   <div class="container-section">
     <div class="row">
       <div class="col s12">
@@ -116,7 +150,7 @@
       <article class="project">
         <section id="project" class="project">
           <div class="container-project">
-            <div class="left">
+            <div class="center">
               <article class="project">
                 <figure class="project-imageContainer">
                   <figure class="event-imageContainer">
@@ -139,7 +173,7 @@
                   </figure>
               </article>
             </div>
-            <div class="right">
+            <div class="center">
               <article class="project">
                 <figure class="project-imageContainer">
                   <figure class="event-imageContainer">
@@ -155,7 +189,7 @@
                         <span class="card-title grey-text text-darken-4">Makers<i
                             class="material-icons right">close</i></span>
                         <p>¡Bienvenido creador de tecnología a 19Makers!</p>
-                        <a class="waves-effect waves-light btn teal center" href="assets/img/Makers2.png">REGISTRATE</a>
+                        <a class="waves-effect waves-light btn teal" href="assets/img/Makers2.png">REGISTRATE</a>
                       </div>
                     </div>
                   </figure>
@@ -176,7 +210,7 @@
                       <div class="card-reveal">
                         <span class="card-title grey-text text-darken-4">Médicos, hospitales.<i
                             class="material-icons right">close</i></span>
-                        <p>Aquí podrás solicitar apoyo especial para profesionales de salud ¡</p>
+                        <p>¡Aquí podrás solicitar apoyo especial para profesionales de salud!</p>
                         <a class="waves-effect waves-light btn teal" href="assets/img/medicos2.png">REGISTRATE</a>
                       </div>
                     </div>
@@ -230,6 +264,14 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   <script>
     document.addEventListener('DOMContentLoaded', function () {
+      var elems = document.querySelectorAll('.sidenav');
+      var instances = M.Sidenav.init(elems, {
+        edge: 'right'
+      });
+    });
+  </script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
       var elems = document.querySelectorAll('.slider');
       var instances = M.Slider.init(elems);
     });
@@ -241,13 +283,9 @@
     });
   </script>
 
-
+  <!--<br />Diseñado con 💖 por
+            <a href="https://taniasosa.com">Tania Sosa</a>-->
 
 </body>
 
 </html>
-
-
-
-<!--<br />Diseñado con 💖 por
-            <a href="https://taniasosa.com">Tania Sosa</a>-->
