@@ -31,10 +31,8 @@ p {
     align-items: center;
 }
 
-
-
-.menu {
-    height: inherit;
+figure {
+    margin: 0px;
 }
 
 
