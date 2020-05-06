@@ -31,64 +31,11 @@ p {
     align-items: center;
 }
 
-.header {
-    background-color: white;
-    color: black;
-    display: flex;
-    height: 70px;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
 
-ol,
-ul {
-    margin: 0;
-    padding: 100;
-    list-style: none;
-}
-
-figure {
-    margin: 0px;
-}
-
-figure.logo {
-    justify-content: center;
-    padding-top: .3em;
-    padding-left: 2.5em;
-
-}
-
-.header ol {
-    display: flex;
-    height: inherit;
-}
-
-.header ol li {
-    height: inherit;
-}
-
-
-
-.header a {
-    display: flex;
-    align-items: center;
-    height: inherit;
-    color: black;
-    text-decoration: none;
-    padding: 0 10px;
-    font-size: 1em;
-}
 
 .menu {
     height: inherit;
 }
-
-.parallax-container {
-    height: 150px;
-
-}
-
 
 
 .waves-effect.waves-light.btn.teal {
